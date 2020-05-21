@@ -3,6 +3,11 @@ package model.entities;
 import java.io.Serializable;
 import java.util.Date;
 
+import javax.persistence.DiscriminatorValue;
+import javax.persistence.Entity;
+
+@Entity
+@DiscriminatorValue("FR")
 public class Fornecedor extends Pessoa implements Serializable {
 
 	private static final long serialVersionUID = 1L;

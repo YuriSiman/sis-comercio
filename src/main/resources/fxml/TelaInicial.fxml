@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="900.0" stylesheets="@../../resources/css/estilo.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="52.0" layoutY="46.0" text="SisComércio" textFill="#c2c2c2">
+         <font>
+            <Font name="Book Antiqua" size="83.0" />
+         </font>
+      </Label>
+      <Label layoutX="267.0" layoutY="152.0" prefHeight="31.0" prefWidth="183.0" text="COMMUNIT 2020.1" textFill="#c2c2c2">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <VBox layoutX="482.0" layoutY="173.0" prefHeight="460.0" prefWidth="352.0">
+         <children>
+            <JFXTextField labelFloat="true" promptText="Usuário" unFocusColor="#c2c2c2">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="40.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField labelFloat="true" promptText="E-mail" unFocusColor="#c2c2c2">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="40.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXPasswordField labelFloat="true" promptText="Senha" unFocusColor="#c2c2c2">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="40.0" />
+               </VBox.margin>
+            </JFXPasswordField>
+            <JFXButton prefHeight="40.0" prefWidth="332.0" stylesheets="@../css/estilo.css" text="Inscreva-se" textFill="#c2c2c2" />
+            <Label prefHeight="72.0" prefWidth="347.0" text="Ao clicar em &quot;Inscreva-se&quot;, você concorda com nossos Termos de Serviço e Política de Privacidade. " textFill="#c2c2c2" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+      <JFXButton layoutX="724.0" layoutY="46.0" prefHeight="40.0" prefWidth="110.0" stylesheets="@../css/estilo.css" text="Login" textFill="#c2c2c2" />
+   </children>
+</AnchorPane>

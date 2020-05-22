@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="650.0" prefWidth="900.0" stylesheets="@../../resources/css/estilo.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="650.0" prefWidth="900.0" stylesheets="@../../resources/css/estilo.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaInicialController">
    <children>
       <Label layoutX="52.0" layoutY="46.0" text="SisComércio" textFill="#c2c2c2">
          <font>
@@ -23,7 +23,7 @@
       </Label>
       <VBox layoutX="482.0" layoutY="173.0" prefHeight="460.0" prefWidth="352.0">
          <children>
-            <JFXTextField labelFloat="true" promptText="Usuário" unFocusColor="#c2c2c2">
+            <JFXTextField fx:id="txtUsuario" labelFloat="true" promptText="Usuário" unFocusColor="#c2c2c2">
                <padding>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </padding>
@@ -34,7 +34,7 @@
                   <Insets bottom="40.0" />
                </VBox.margin>
             </JFXTextField>
-            <JFXTextField labelFloat="true" promptText="E-mail" unFocusColor="#c2c2c2">
+            <JFXTextField fx:id="txtEmail" labelFloat="true" promptText="E-mail" unFocusColor="#c2c2c2">
                <padding>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </padding>
@@ -45,7 +45,7 @@
                   <Insets bottom="40.0" />
                </VBox.margin>
             </JFXTextField>
-            <JFXPasswordField labelFloat="true" promptText="Senha" unFocusColor="#c2c2c2">
+            <JFXPasswordField fx:id="passUsuario" labelFloat="true" promptText="Senha" unFocusColor="#c2c2c2">
                <font>
                   <Font size="25.0" />
                </font>
@@ -56,7 +56,7 @@
                   <Insets bottom="40.0" />
                </VBox.margin>
             </JFXPasswordField>
-            <JFXButton prefHeight="40.0" prefWidth="332.0" stylesheets="@../css/estilo.css" text="Inscreva-se" textFill="#c2c2c2" />
+            <JFXButton fx:id="btnInscreva" onAction="#onBtnInscrevaAction" prefHeight="40.0" prefWidth="332.0" stylesheets="@../css/estilo.css" text="Inscreva-se" textFill="#c2c2c2" />
             <Label prefHeight="72.0" prefWidth="347.0" text="Ao clicar em &quot;Inscreva-se&quot;, você concorda com nossos Termos de Serviço e Política de Privacidade. " textFill="#c2c2c2" wrapText="true">
                <font>
                   <Font size="14.0" />
@@ -67,6 +67,6 @@
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
          </padding>
       </VBox>
-      <JFXButton layoutX="724.0" layoutY="46.0" prefHeight="40.0" prefWidth="110.0" stylesheets="@../css/estilo.css" text="Login" textFill="#c2c2c2" />
+      <JFXButton fx:id="btnLogin" layoutX="724.0" layoutY="46.0" onAction="#onBtnLoginAction" prefHeight="40.0" prefWidth="110.0" stylesheets="@../css/estilo.css" text="Login" textFill="#c2c2c2" />
    </children>
 </AnchorPane>

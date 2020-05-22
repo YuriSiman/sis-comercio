@@ -26,15 +26,23 @@ public class InterfaceUsuario extends Application {
 		}
 	}
 	
-	public void telaInicial(ActionEvent event) {
+	public void telaInicial(ActionEvent event, String arquivoFXML, String nomeTela) {
+		padraoInicial(event, arquivoFXML, nomeTela);
+	}
+	
+	public void telaLogin(ActionEvent event, String arquivoFXML, String nomeTela) {
+		padraoInicial(event, arquivoFXML, nomeTela);
+	}
+	
+	public void padraoInicial(ActionEvent event, String arquivoFXML, String nomeTela) {
 		try {
-			Parent parent = FXMLLoader.load((getClass().getResource("/fxml/TelaInicial.fxml")));
+			Parent parent = FXMLLoader.load((getClass().getResource(arquivoFXML)));
 			Scene scene = new Scene(parent);
 			Stage login = (Stage) ((Node) event.getSource()).getScene().getWindow();
 			scene.getStylesheets().add(getClass().getResource("/css/estilo.css").toExternalForm());
 		
 			login.setScene(scene);
-			login.setTitle("SisComercio - Tela Inicial");
+			login.setTitle(nomeTela);
 			login.show();
 		} catch (Exception e) {
 			System.out.println(e.getMessage());

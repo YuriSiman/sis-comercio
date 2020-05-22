@@ -55,12 +55,13 @@ public class TelaInicialController implements Initializable {
 			
 			UsuarioDAO daoUsuario = new UsuarioDAO();
 			daoUsuario.save(usuario);
+			view.telaLogin(event, "/fxml/Login.fxml", "SisComercio - Tela Login");
 		}
 	}
 	
 	@FXML
 	public void onBtnLoginAction(ActionEvent event) {
-		
+		view.telaLogin(event, "/fxml/Login.fxml", "SisComercio - Tela Login");
 	}
 	
 	@Override
